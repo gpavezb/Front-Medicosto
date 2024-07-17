@@ -1,0 +1,33 @@
+.botonMap {
+  height: 3.5rem;
+  width: 10rem;
+  border-radius: 5%;
+  border: none;
+}
+
+.imgMedicamento {
+  width: 70%;
+  height: 35%;
+}
+.map {
+  width: 80%;
+}
+.a {
+  z-index: 100;
+  display: flex;
+  direction: rtl;
+
+  border: 2px solid red;
+}
+
+.b {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  width: 400px;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: gray;
+  border-radius: 5%;
+}

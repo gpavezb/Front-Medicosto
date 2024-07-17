@@ -1,0 +1,76 @@
+/* Portada.css */
+
+/* Portada.css */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden; /* Evitar scroll horizontal */
+}
+
+.front {
+  position: relative;
+  height: calc(100vh - 75px); /* Ajuste por el navbar */
+  overflow: hidden;
+}
+
+.front.scrolled {
+  /* Agrega cualquier estilo adicional para cuando se haya desplazado */
+}
+
+#portada {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+#imagenPortada {
+  width: 50vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+#lema {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verde-oscuro);
+  color: white;
+  font-size: 52px;
+  height: 100%;
+  gap: 10px;
+  padding: 2vh;
+}
+
+#lema > span {
+  font-size: 30px;
+}
+
+.search-results-container {
+  background-color: rgba(0, 0, 255, 0.445);
+  height: 0vh;
+}
+
+.search-results-container.active {
+  display: block; /* Muestra el contenedor cuando se activa */
+  height: 100vh;
+}
+
+.search-results-container.active .busqueda {
+  height: calc(100vh - 75px);
+  top: 105vh; /* Ajusta esta propiedad para el desplazamiento cuando isScrolled es true */
+}
+
+.medications-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
